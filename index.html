@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taxovise</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <header class="d-flex align-items-center p-3">
+        <div class="col-6 col-md-12 mb-2 mb-md-0 d-inline-flex">
+          <a href="/" class="text-decoration-none">
+            <img
+              src="./assets/images/logo.png"
+              class="img-fluid"
+              alt="Logo"
+              width="200px"
+            />
+          </a>
+          <div class="col-6 col-md-9">
+            <!-- <div class="d-flex top-bg-color text-white">
+                  <p class="px-2"><img src="./assets/images/email.png" alt="Email"> info@yourdomain</p>
+                  <p class="px-2"><img src="./assets/images/phone-rotary.png" alt="Phone"> +9876543210</p>
+                  <p class="px-2"><img src="./assets/images/clock.png" alt="Clock"> Mon-Fri:09.00-17.00</p>
+              </div> -->
+            <ul class="nav justify-content-center mb-md-0">
+              <!-- <li><a href="" class="nav-link border theme-bg-primary rounded-circle"><img src="./assets/images/facebook.png" class="img-fluid" alt="Facebook"></a></li>
+              <li><a href="" class="nav-link border theme-bg-primary rounded-circle"><img src="./assets/images/facebook.png" class="img-fluid" alt="Facebook"></a></li>
+              <li><a href="" class="nav-link border theme-bg-primary rounded-circle"><img src="./assets/images/facebook.png" class="img-fluid" alt="Facebook"></a></li>
+              <li><a href="" class="nav-link border theme-bg-primary rounded-circle"><img src="./assets/images/facebook.png" class="img-fluid" alt="Facebook"></a></li> -->
+
+              <li><a href="#" class="nav-link px-2 active-nav">Home</a></li>
+              <li><a href="#" class="nav-link px-2">About us</a></li>
+              <li>
+                <a
+                  href="#"
+                  class="nav-link px-2 d-block text-decoration-none dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Services</a
+                >
+                <ul class="dropdown-menu text-small shadow">
+                  <li><a class="dropdown-item" href="#">New project...</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="nav-link px-2">Cases</a></li>
+              <li>
+                <a
+                  href="#"
+                  class="nav-link px-2 d-block text-decoration-none dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Pages</a
+                >
+                <ul class="dropdown-menu text-small shadow">
+                  <li><a class="dropdown-item" href="#">New project...</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+              </li>
+              <button
+                type="button"
+                class="btn-get-a-quote theme-bg-primary text-white fs-6 px-4"
+              >
+                GET A QUOTE
+              </button>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-auto">
+          <nav class="navbar float-end">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active-nav" aria-current="page" href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About us</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Services
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Cases</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Pages
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+    </div>
+    <!-- Section-1 -->
+    <div class="section-1 top-bg-color text-white">
+      <div class="container">
+        <div class="row d-flex align-items-center pt-5">
+          <div class="col-12 col-md-6 fw-light">
+            <p>ACCOUNTING & TAX SERVICES</p>
+            <h1 class="display-3 fw-bold">
+              Leave Your Taxes To The Professionals
+            </h1>
+            <p>Leave Your Taxes To The Professionals</p>
+            <button
+              type="button"
+              class="theme-bg-secondary text-white fw-light px-4 py-2 btn-get-started"
+            >
+              <img src="./assets/images/next.png" class="pb-1" alt="Next" /> GET
+              STARTED
+            </button>
+            <hr />
+            <div class="d-inline-flex">
+              <p class="px-2">
+                <img src="./assets/images/check (3).png" alt="Check" /> Tax
+                Planning
+              </p>
+              <p class="px-2">
+                <img src="./assets/images/check (3).png" alt="Check" />
+                Strategic Advice
+              </p>
+              <p class="px-2">
+                <img src="./assets/images/check (3).png" alt="Check" /> Audit
+                Support
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 pt-5">
+            <img
+              src="./assets/images/portrait-of-an-attractive-mature-businesswoman-2023.png"
+              class="img-fluid"
+              height=""
+              alt="Portrait"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section-2 -->
+    <div class="section-2">
+      <div class="container">
+        <div class="row align-items-center py-5">
+          <div class="col-12 col-md-6 position-relative">
+            <img
+              src="./assets/images/couple-investors-sitting-at-table-and-taking-dollar-banknotes-from-advisor-in-office.png"
+              class="img-fluid rounded-start"
+              alt="Advisor in office"
+            />
+            <div class="position-absolute img-text p-1">
+              <div class="img-shape ms-2 mt-1"></div>
+              <h6 class="ms-4 fs-5 fw-bold">
+                We have a system that increasingly taxes work and subsidizes
+                nonwork.
+              </h6>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 py-5">
+            <p>ABOUT TAXOVISE</p>
+            <h2 class="fs-1 fw-bold">
+              We Provide The Best Service For Your Convenience
+            </h2>
+            <p>
+              Arcu integer sociosqu odio conubia orci egestas libero tortor
+              maecenas hac. Cubilia vivamus habitant nostra viverra accumsan.
+              Bibendum vivamus facilisi faucibus arcu pulvinar scelerisque
+              rutrum in nibh.
+            </p>
+            <div class="row d-flex">
+              <div class="col-12 col-md-6 d-flex gap-3">
+                <img
+                  src="./assets/images/process.png"
+                  class="theme-bg-secondary rounded-circle"
+                  width="50px"
+                  height="50px"
+                  alt="Process"
+                />
+                <div class="">
+                  <h6 class="fw-bold">Best Tax Advisor</h6>
+                  <p>
+                    Accumsan a odio porttitor consequat posuere aliquam integer
+                    imperdiet amet.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 d-flex gap-3">
+                <img
+                  src="./assets/images/graph.png"
+                  class="theme-bg-primary rounded-circle"
+                  width="50px"
+                  height="50px"
+                  alt="Graph"
+                />
+                <div>
+                  <h6 class="fw-bold">Highly Dedicated</h6>
+                  <p>
+                    Accumsan a odio porttitor consequat posuere aliquam integer
+                    imperdiet amet.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn-get-a-quote theme-bg-primary text-white fs-6 px-5 py-2"
+            >
+              DISCOVER MORE
+            </button>
+          </div>
+          <hr />
+          <div class="row gap-3">
+            <h6 class="fs-4">Our Amazing Clients Worldwide:</h6>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+              <div class="col">
+                <img
+                  src="./assets/images/logoipsum-1.png"
+                  class="img-fluid"
+                  alt="Brand-Logo"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./assets/images/logoipsum-2.png"
+                  class="img-fluid"
+                  alt="Brand-Logo"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./assets/images/logoipsum-3.png"
+                  class="img-fluid"
+                  alt="Brand-Logo"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./assets/images/logoipsum-4.png"
+                  class="img-fluid"
+                  alt="Brand-Logo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section-3 -->
+    <div class="section-3">
+      <div class="container d-flex align-items-center">
+        <div class="text-white col-12 col-md-6 py-5">
+          <h6 class="fs-1">Ready to Tackle Your Taxes with Confidence?</h6>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+            eius atque qui possimus saepe obcaecati maiores aperiam.
+          </p>
+          <button
+            type="button"
+            class="btn-get-a-quote theme-bg-primary text-white fs-6 px-4 py-1"
+          >
+            CONTACT NOW
+          </button>
+        </div>
+        <div class="col-12 col-md-6 position-relative">
+          <img
+            src="./assets/images/business-team-reviewing-a-diagram.png"
+            class="" width="150%"
+            alt="Video"
+          />
+          <a class="video-play-button" href="">
+            <span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
